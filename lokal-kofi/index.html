@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lokal Kofi is a neighborhood coffee shop in Bukidnon, Philippines. Find our menu, story, and visit details." />
+    <meta name="theme-color" content="#f5efe4" />
+    <title>Lokal Kofi | Coffee & good company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Lokal Kofi home"><span class="wordmark-mark" aria-hidden="true">lk</span><span>Lokal <b>Kofi</b></span></a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <a class="header-visit" href="#visit">Find your way <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2200&q=88" alt="Coffee and pastries arranged on a café table" fetchpriority="high" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-kicker"><span></span> A little corner of Bukidnon</p>
+          <h1 id="hero-title">Stay for<br />the <em>good</em><br />part.</h1>
+          <p class="hero-intro">Coffee, comfort, and a seat saved just for you.</p>
+          <a class="button-primary" href="#menu">Take a look at the menu <span aria-hidden="true">↓</span></a>
+          <span class="hero-note">Lokal Kofi <i>·</i> Bukidnon, Philippines</span>
+        </div>
+        <a class="hero-scroll" href="#menu" aria-label="Scroll to menu"><span></span></a>
+      </section>
+
+      <section class="menu" id="menu" aria-labelledby="menu-title">
+        <div class="menu-topline"><span>Good things, made fresh</span><span>01 <i>/</i> MENU</span></div>
+        <div class="menu-heading">
+          <div>
+            <p class="section-kicker">Your usual, or something new</p>
+            <h2 id="menu-title">Meet your <em>new usual.</em></h2>
+          </div>
+          <div class="menu-heading-aside">
+            <p class="menu-heading-note">Made for slow mornings, quick catch-ups, and everything in between.</p>
+            <div class="menu-cup-art" role="img" aria-label="Illustration of a steaming cup of coffee">
+              <span class="cup-steam steam-one" aria-hidden="true"></span>
+              <span class="cup-steam steam-two" aria-hidden="true"></span>
+              <span class="cup-steam steam-three" aria-hidden="true"></span>
+              <span class="cup-saucer" aria-hidden="true"></span>
+              <span class="cup-body" aria-hidden="true"><span></span></span>
+              <span class="cup-handle" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-toolbar">
+          <div class="menu-filters" role="group" aria-label="Filter menu">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All menu</button>
+            <button class="filter-button" type="button" data-filter="hot" aria-pressed="false">Hot</button>
+            <button class="filter-button" type="button" data-filter="iced" aria-pressed="false">Iced</button>
+            <button class="filter-button" type="button" data-filter="food" aria-pressed="false">Food</button>
+          </div>
+          <div class="size-picker" role="group" aria-label="Choose coffee size">
+            <span>Size</span>
+            <button type="button" data-size="12" aria-pressed="true">12 oz</button>
+            <button type="button" data-size="16" aria-pressed="false">16 oz</button>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-group" data-menu-category="hot">
+            <div class="menu-group-heading"><span class="menu-index">01</span><h3>Hot coffee</h3><span class="group-mark" aria-hidden="true">✳</span></div>
+            <ul class="menu-list">
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb drink-thumb americano" aria-hidden="true"><i></i></span><div><span>Americano</span><p>Espresso, opened up with hot water.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb drink-thumb cappuccino" aria-hidden="true"><i></i></span><div><span>Cappuccino</span><p>Espresso under soft steamed milk foam.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb drink-thumb latte" aria-hidden="true"><i></i></span><div><span>Café latte</span><p>Espresso and silky steamed milk.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb drink-thumb caramel" aria-hidden="true"><i></i></span><div><span>Caramel latte</span><p>Espresso, steamed milk, and caramel.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb drink-thumb mocha" aria-hidden="true"><i></i></span><div><span>Mocha</span><p>Espresso, chocolate, and steamed milk.</p></div><span class="menu-price">₱95</span></li>
+            </ul>
+          </article>
+          <article class="menu-group" data-menu-category="iced">
+            <div class="menu-group-heading"><span class="menu-index">02</span><h3>Cold coffee</h3><span class="group-mark" aria-hidden="true">✳</span></div>
+            <ul class="menu-list">
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb iced-thumb iced-americano" aria-hidden="true"><i></i></span><div><span>Iced Americano</span><p>Espresso, chilled water, and ice.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb iced-thumb iced-cappuccino" aria-hidden="true"><i></i></span><div><span>Iced cappuccino</span><p>Espresso, chilled milk, and a little foam.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb iced-thumb iced-latte" aria-hidden="true"><i></i></span><div><span>Iced latte</span><p>Espresso and cold milk over ice.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb iced-thumb iced-caramel" aria-hidden="true"><i></i></span><div><span>Iced caramel latte</span><p>Cold espresso and milk with caramel.</p></div><span class="menu-price">₱95</span></li>
+              <li class="menu-item" data-price-12="95" data-price-16="120"><span class="menu-thumb iced-thumb iced-mocha" aria-hidden="true"><i></i></span><div><span>Iced mocha</span><p>Espresso, chocolate, cold milk, and ice.</p></div><span class="menu-price">₱95</span></li>
+            </ul>
+          </article>
+          <article class="menu-group food-group" data-menu-category="food">
+            <div class="menu-group-heading"><span class="menu-index">03</span><h3>From the kitchen</h3><span class="group-mark" aria-hidden="true">✳</span></div>
+            <ul class="menu-list">
+              <!-- REPLACE: Confirm food availability and suggested prices with the shop. -->
+              <li class="menu-item"><span class="menu-thumb food-thumb sandwich-thumb" aria-hidden="true"><i></i></span><div><span>Chicken sandwich</span><p>Chicken with fresh, crisp greens.</p></div><span class="menu-price">₱160</span></li>
+              <li class="menu-item"><span class="menu-thumb food-thumb cheese-thumb" aria-hidden="true"><i></i></span><div><span>Grilled cheese</span><p>Toasted bread with melted cheese.</p></div><span class="menu-price">₱120</span></li>
+              <li class="menu-item"><span class="menu-thumb food-thumb fries-thumb" aria-hidden="true"><i></i></span><div><span>French fries</span><p>Golden fries, served hot.</p></div><span class="menu-price">₱85</span></li>
+              <li class="menu-item"><span class="menu-thumb food-thumb chicken-thumb" aria-hidden="true"><i></i></span><div><span>Crispy chicken bites</span><p>Crunchy, bite-sized chicken.</p></div><span class="menu-price">₱150</span></li>
+            </ul>
+          </article>
+        </div>
+        <p class="menu-note">Food prices are suggestions and should be confirmed before publishing.</p>
+      </section>
+
+      <section class="about section-mist" id="about" aria-labelledby="about-title">
+        <div class="container about-inner">
+            <div class="about-side">
+              <p class="section-kicker">A place to pause</p>
+              <span class="about-mark" aria-hidden="true"><span>LK</span><small>LOCAL COFFEE</small></span>
+              <p class="about-origin">Bukidnon, Philippines</p>
+            </div>
+            <div class="about-copy">
+              <h2 id="about-title">Rooted here.<br /><em>Made to be shared.</em></h2>
+              <p class="about-statement">Good coffee. Good company. No rush to be anywhere else.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="visit section-panel" id="visit" aria-labelledby="visit-title">
+        <div class="container visit-layout">
+            <div class="visit-heading">
+            <p class="section-kicker">Your table is waiting</p>
+            <h2 id="visit-title">Come on<br /><em>over.</em></h2>
+            <p>Drop by for a cup. We’ll see you in Bukidnon.</p>
+          </div>
+          <dl class="visit-details">
+            <div class="detail-row">
+              <dt>Address</dt>
+              <dd class="visit-address">
+                <span>Dologon, Bukidnon, Philippines</span>
+                <a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Lokal+Kofi+Dologon+Bukidnon" target="_blank" rel="noopener noreferrer">
+                  Open in Google Maps <span aria-hidden="true">↗</span>
+                </a>
+              </dd>
+            </div>
+            <div class="detail-row">
+              <dt>Hours</dt>
+              <dd>
+                8:00 AM – 6:00 PM <span aria-hidden="true">·</span> Mon – Sat
+              </dd>
+            </div>
+            <div class="detail-row">
+              <dt>Contact</dt>
+              <dd>
+                0998 345 9209 <span aria-hidden="true">·</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Lokal Kofi</p>
+        <p>Bukidnon, Philippines <span aria-hidden="true">·</span> <a href="mailto:erwin.leonardia.job@gmail.com">Get in touch</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
